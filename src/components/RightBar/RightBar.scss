@@ -1,0 +1,48 @@
+.rightbar{
+    flex: 3;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        .card{
+            border: solid 2px;
+            border-radius: 2px;
+            padding: 10px;
+            gap: 10px;
+        .user{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .userInfo{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .buttons{
+                display: flex;
+                gap: 10px;
+                button{
+                    border: none;
+                    color: white;
+                    &:first-child{
+                        background-color: blue;
+                    }
+                    &:last-child {
+                        background-color: red;
+                    }
+                }
+            
+            }
+        }
+    }
+}
+}

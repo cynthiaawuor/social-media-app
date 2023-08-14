@@ -7,7 +7,7 @@ function Register() {
         <div className="register">
         <div className="card">
             <div className="left">
-                <h1>Hello! Welcome back</h1>
+                <h1>Hello! Welcome</h1>
                 <p>We use stylelint to 
                 check for style guide conformity. It uses the ruleset in .stylelintrc 
                 and rules from our SCSS configuration. .stylelintrc is located in the home

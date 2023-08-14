@@ -1,0 +1,48 @@
+.leftbar{
+    flex: 2;
+    position: sticky;
+    top: 70px;
+
+    .container{
+        hr{
+            height: 0.05px;
+            border: 1px solid lightgray;
+            margin: 20px 0px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span{
+                font-size: 14px;
+            }
+
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                height: 30px;
+                width: 30px;
+
+            }
+            span{
+                font-size: 14px;
+
+            }
+        }
+    }
+}
