@@ -1,7 +1,6 @@
 import React from "react";
 import "./RightBar.scss";
 import user from "../../assets/cynthia(1).png"
-import { red } from "@mui/material/colors";
 
 function RightBar(){
     return(
@@ -39,10 +38,10 @@ function RightBar(){
     <img src={user} alt="" />
     <span>Vincent Kwach</span>
     </div>
-    <div className="buttons">
-    <button >Follow</button>
-    <button >Dismiss</button>
-    </div>
+    <p>
+        <span>changed their cover picture</span>
+    </p>
+    <span>1 minute ago</span>
     </div>
 
     <div className="user">
@@ -50,10 +49,10 @@ function RightBar(){
     <img src={user} alt="" />
     <span>John Mwangi</span>
     </div>
-    <div className="buttons">
-    <button>Follow</button>
-    <button>Dismiss</button>
-    </div>
+    <p>
+        <span>changed their cover picture</span>
+    </p>
+    <span>1 minute ago</span>
     </div>
     </div>
 
@@ -62,23 +61,18 @@ function RightBar(){
     <div className="user">
         <div className="userInfo">
     <img src={user} alt="" />
+    <div className="online"></div>
     <span>Vincent Kwach</span>
-    </div>
-    <div className="buttons">
-    <button>Follow</button>
-    <button>Dismiss</button>
     </div>
     </div>
 
     <div className="user">
         <div className="userInfo">
     <img src={user} alt="" />
+    <div className="online"></div>
     <span>John Mwangi</span>
     </div>
-    <div className="buttons">
-    <button>Follow</button>
-    <button>Dismiss</button>
-    </div>
+    
     </div>
     </div>
 </div>

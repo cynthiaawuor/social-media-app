@@ -8,10 +8,16 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
-// import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import cynthia from "../../assets/cynthia(1).png";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
+
 
 function NavBar(){
+
+    const { toggle,darkMode } = useContext(DarkModeContext);
+
     return(
 <div className="navbar">
     <div className="left">
@@ -19,7 +25,8 @@ function NavBar(){
             <span>Cynthia Social</span>
         </Link>
 <HomeOutlinedIcon />
-<DarkModeOutlinedIcon />
+{darkMode ? (<WbSunnyOutlinedIcon onClick={toggle}/>) : (<DarkModeOutlinedIcon onClick={toggle}/>)}
+
 <GridViewOutlinedIcon />
 <div className="searchbar">
 <SearchOutlinedIcon />

@@ -1,5 +1,10 @@
+@import "../../style.scss";
+
 .rightbar{
+    @include themify($themes) {
+
     flex: 3;
+    background-color: themed("bgSoft");
     .container{
         display: flex;
         flex-direction: column;
@@ -7,26 +12,45 @@
         padding: 20px;
 
         .card{
-            border: solid 2px;
-            border-radius: 2px;
-            padding: 10px;
+            box-shadow: 3px 1px 5px 0px rgba(179,168,168,0.75) inset;
+            -webkit-box-shadow: 3px 1px 5px 0px rgba(179,168,168,0.75) inset;
+            -moz-box-shadow: 3px 1px 5px 0px rgba(179,168,168,0.75) inset;
+            padding: 20px;
             gap: 10px;
+            background-color: themed("bg");
+            span{
+                color: themed("textColorSoft");
+            }
         .user{
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 10px;
+            position: relative;
+            top: 0px;
 
             .userInfo{
                 display: flex;
                 align-items: center;
                 gap: 10px;
-            }
+               
+            
             img{
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
             }
+            
+            .online {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: limegreen;
+                position: absolute;
+                left: 25px;
+
+            }
+        }
             .buttons{
                 display: flex;
                 gap: 10px;
@@ -44,5 +68,6 @@
             }
         }
     }
+}
 }
 }

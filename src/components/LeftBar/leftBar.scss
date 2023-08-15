@@ -1,12 +1,18 @@
+@import "../../style.scss";
+
 .leftbar{
+    @include themify($themes){
+
     flex: 2;
     position: sticky;
     top: 70px;
+    background-color: themed("bg");
+    color: themed("textColorSoft");
 
     .container{
         hr{
             height: 0.05px;
-            border: 1px solid lightgray;
+            border: 1px solid themed("border");
             margin: 20px 0px;
         }
         .menu{
@@ -45,4 +51,5 @@
             }
         }
     }
+}
 }
