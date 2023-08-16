@@ -27,9 +27,10 @@ function App() {
     return (
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <NavBar />
-      <div className="menu">
+      <div style={{display: "flex"}}>
       <LeftBar />
       <div className="home/profile" style={{flex: 6}}>
+
       <Outlet />
       </div>
       <RightBar />
@@ -42,14 +43,14 @@ function App() {
     {
       path: "/",
       element: <Layout />,
-      Children: [
+      children: [
         {
           path: "/",
-          element: <Home />
+          element: <Home />,
       },
       {
         path: "/profile/:id",
-        element: <Profile />
+        element: <Profile />,
     }
       ]
 
